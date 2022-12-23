@@ -1,10 +1,14 @@
 /// <reference types="@types/google.maps" />
-
 import { User } from './User'
 import { Company } from './Company'
+import { Map } from './Map'
 
 let user = new User()
-let com = new Company()
+let company = new Company
+let map = new Map('mapDiv')
+map.addMarker(user)
+map.addMarker(company)
 
-console.log(user, com);
+
+
 
